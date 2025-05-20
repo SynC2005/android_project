@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1c2e46</color>
+    <color name="primary_dark">#142232</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="white">#ffffff</color>
+    <color name="input_bg">#ececec</color>
+    <color name="icon_bg">#20ffffff</color>
+    <color name="error">#b00020</color>
+    <color name="rcv_msg_bg">#090d16</color>
+    <color name="orange">#FFA500</color>
+    <color name="white2">#F3F3F3</color>
+    <color name="goldenrod">#FECF70</color>
+    <color name="blue">#1042FF</color>
+    <color name="darkOrange">#ffc006</color>
+
+
+
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">sigma-chat-v2</string>
+    <string name="welcome_back">welcome back!</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="email">Email</string>
+    <string name="passwordnya_jangan_lupa">Passwordnya jangan lupa</string>
+    <string name="mana_email_lu">Mana Email lu</string>
+    <string name="sign_in">Sign In</string>
+    <string name="bikin_akun_disini_sigma">bikin akun disini = SIGMA</string>
+    <string name="selamat_datang_di_nsigma_chat">Selamat datang di \nSIGMA CHAT</string>
+    <string name="buat_akun_baru">Buat akun baru</string>
+    <string name="buat_akun_disini_sigma">Buat akun disini = SIGMA</string>
+    <string name="klik_disini">klik disini</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="tambahkan_foto_nsigma_kamu">Tambahkan foto \nSIGMA kamu</string>
+    <string name="nama">Nama</string>
+    <string name="inget_ga_password_nya">Inget ga password nya</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="password">Password</string>
+    <string name="daftar">daftar</string>
+    <string name="login">Login</string>
+    <string name="ayo_menjadi_sigma">Ayo Menjadi SIGMA</string>
+    <string name="select_user">Select User</string>
+    <string name="type_a_message">type a message</string>
+</resources>
