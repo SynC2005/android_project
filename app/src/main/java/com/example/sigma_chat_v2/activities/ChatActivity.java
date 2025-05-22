@@ -192,9 +192,14 @@ public class ChatActivity extends BaseActivity {
                         e.printStackTrace();
                     }
                     showToast("Notifikasi berhasil dikirim");
-                } else {
+                } try {
+                    String errorBody = response.errorBody() != null ? response.errorBody().string() : "No body";
+                    Log.e("SendNotification", "Error: " + response.code() + " - " + errorBody);
                     showToast("Error: " + response.code());
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
+
             }
 
             @Override
