@@ -146,7 +146,7 @@ public class SignUpActivity extends AppCompatActivity {
         } else if (binding.inputConfirmPassWord.getText().toString().trim().isEmpty()) {
             showToast("masukin password yang tadi dibuat");
             return false;
-        } else if (!binding.inputConfirmPassWord.getText().toString().equals(binding.inputConfirmPassWord.getText().toString())) {
+        } else if (!binding.inputPassWord.getText().toString().equals(binding.inputConfirmPassWord.getText().toString())) {
             showToast("harus sama kaya password yang dibuat tadi");
             return false;
         } else {

@@ -6,6 +6,7 @@ import android.graphics.ImageDecoder;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Base64;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -135,6 +136,16 @@ public class ChatActivity extends BaseActivity {
         }
         if (!isReceiverAvailable) {
             try {
+
+                if (receiverUser.token == null || receiverUser.token.isEmpty()) {
+                    showToast("Token penerima tidak tersedia");
+                    return;
+                }
+                Log.d("SendNotification", "Token: " + receiverUser.token);
+                Log.d("SendNotification", "SenderID: " + preferenceManager.getString(Constants.KEY_USER_ID));
+                Log.d("SendNotification", "Message: " + binding.inputMessage.getText().toString());
+
+
                 JSONArray tokens = new JSONArray();
                 tokens.put(receiverUser.token);
 

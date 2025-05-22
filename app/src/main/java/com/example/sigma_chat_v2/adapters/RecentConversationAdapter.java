@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.text.Layout;
 import android.util.Base64;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -73,7 +74,17 @@ public class RecentConversationAdapter extends RecyclerView.Adapter<RecentConver
         }
     }
     private Bitmap getConversionImage(String encodedImage) {
-        byte[] bytes = Base64.decode(encodedImage, Base64.DEFAULT);
-        return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+        try {
+            if (encodedImage != null) {
+                byte[] bytes = Base64.decode(encodedImage.getBytes(), Base64.DEFAULT);
+                return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+            } else {
+                Log.w("RecentConversationAdapter", "encodedImage is null");
+            }
+        } catch (Exception e) {
+            Log.e("RecentConversationAdapter", "Failed to decode image", e);
+        }
+        return null;
     }
+
 }
